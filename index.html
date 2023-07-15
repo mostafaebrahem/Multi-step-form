@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Sidebar start -->
+  <div class="container">
+    <div class="left">
+      <div class="step step-1">
+        <button id="firstStep" class="btn">1</button>
+        <div class="lines">
+          <h6>STEP 1</h6>
+          <h4>Your info</h4>
+        </div>
+      </div>
+      <div class="step step-2 ">
+        <button id="secondStep" class="btn">2</button>
+        <div class="lines">
+          <h6>STEP 2</h6>
+          
+          <h4>Select plan</h4>
+        </div>
+      </div>
+      <div class="step step-3">
+        <button id="thirdStep" class="btn">3</button>
+        <div class="lines">
+          <h6>STEP 3</h6>
+          <h4>Add-ons</h4>
+        </div>
+      </div>
+      <div class="step step-4">  <button id="forthStep" class="btn">4</button>
+        <div class="lines">
+          <h6> STEP 4</h6>
+          <h4> Summary</h4>
+        </div></div>
+    </div>
+      <!-- Sidebar end -->
+    <div class="right">
+       <!-- Step 4 start -->
+      <div id="thank" class="thank">
+        <div class="thanks">
+          <img src="assets/images/icon-thank-you.svg" alt="">
+          <h1>Thank You</h1>
+          <p>Thanks for confirming your subscribtion!We hope you have fun using our plAatform. If you ever need support,please feel free to email us at support@loremgaming.com</p>
+        </div>
+      </div>
+  
+  
+
+  <!-- Dynamically add subscription and add-on selections here -->
+
+  
+
+  <div id="info4" class="info4">
+   <div class="sec">
+    <h1> Finishing up</h1>
+    <p>Double-check everything looks OK before confirming.</p> 
+    <div class="online-service">
+      <div class="online-left">
+      <p>Total (per month/year)</p>
+      </div>
+      <div class="online-right">
+        <h6>+$2/mo</h6>
+      </div>
+ 
+    <div class="online-service">
+      <div class="online-left">
+        <h4>Customizable Profile</h4>
+      <p>Custom theme on your profile</p>
+      </div>
+      <div class="online-right">
+        <h6>+$2/mo</h6>
+      </div>
+    </div>
+   </div>
+   </div>
+  
+   <div class="plan-btns">
+    <button class="previous" id="goBackTo3" >Go Back</button>
+   <button class="btns" id="last" >Next Step</button>
+   </div>
+  </div>
+  <!-- Step 4 end -->
+
+
+
+      <!-- Step 3 start -->
+      
+      <div id="info3" class="info3">
+        <div class="sec">
+          <h1> Pick add-ons</h1>
+        <p>Add-ons help enhance your gaming experience.</p>
+       <div class="items">
+        <div class="online-service">
+          <div class="online-left">
+            <h4>Online service</h4>
+          <p>Access to multiplayer games</p>
+          </div>
+          <div class="online-right">
+            <h6>+$1/mo</h6>
+          </div>
+        </div>
+        <div class="online-service">
+          <div class="online-left">
+            <h4>Larger storage</h4>
+          <p>Extra 1TB of cloud save</p>
+          </div>
+          <div class="online-right">
+            <h6>+$2/mo</h6>
+          </div>
+        </div>
+        <div class="online-service">
+          <div class="online-left">
+            <h4>Customizable Profile</h4>
+          <p>Custom theme on your profile</p>
+          </div>
+          <div class="online-right">
+            <h6>+$2/mo</h6>
+          </div>
+        </div>
+       </div>
+        </div>
+      
+       <div class="plan-btns">
+        <button class="previous" id="goBackTo2" >Go Back</button>
+       <button class="btns" id="profile" >Next Step</button>
+       </div>
+      </div>
+
+      <!-- Step 2 start -->
+      <div id="info2" class="info2">
+     <div class="sec">
+      <h1> Select your plan</h1>
+      <p>You have the option of monthly or yearly billing.</p>
+     <div class="items">
+      <div class="arcade">
+        <img src="assets/images/icon-arcade.svg" alt="">
+        <h3>Arcade</h3>
+        <p> $9/mo</p>
+      </div>
+      <div class="advanced">
+        <img src="assets/images/icon-advanced.svg" alt="">
+        <h3>Advanced</h3>
+        <p> $12/mo</p>
+      </div>
+      <div class="pro">
+        <img src="assets/images/icon-pro.svg" alt="">
+        <h3>Pro</h3>
+        <p> $15/mo</p>
+      </div>
+     </div>
+     <div class="date">
+      <label for="dates">Monthly</label>
+      <input class="date-input" type="checkbox">
+      <label for="dates">Yearly</label>
+     </div>
+     </div>
+       <div class="plan-btns">
+        <button class="previous" id="goBackTo1" >Go Back</button>
+       <button class="btns" id="yourPlan" >Next Step</button>
+       </div>
+      </div>
+
+      <!-- Step 1 start -->
+
+      <div id="info1" class="info1">
+       <div class="sec">
+        <h1> Personal info</h1>
+        <p>Please provide your name, email address, and phone number.</p>
+        <!-- <form > -->
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="ex: Mostafa">
+          <h6 class="nameValidation1" id="nameValidation1">Name is not valid</h6>
+          <h6 class="nameValidation2" id="nameValidation2">Name is valid</h6>
+    
+          <label for="email">Email Address</label>
+          <input id="email" type="email" placeholder="ex: Mostafa@gmail.com">
+          
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="tel" placeholder="ex: 01234567891">
+       </div>
+    
+          <div class="last">
+            <button class="btns" id="personalInfo" >Next Step</button>
+          </div>
+        <!-- </form> -->
+      </div>
+
+      <!-- Step 1 end -->
+
+    </div>
+  </div>
+  
+ 
+  
+
+
+  
+  
+
+  
+  
+  <script src="index.js"></script>
+</body>
+</html>

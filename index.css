@@ -1,0 +1,245 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+  background-color: rgb(226, 231, 231);
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  padding-top: 3rem;
+  height: 100vh;
+  /* overflow: hidden; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.info2,.info3,.info4{
+  display: none;
+}
+.container{
+  /* margin-top: 5rem; */
+  width: 70%;
+  min-height: 70vh;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.left{
+  border-radius: 1rem;
+  width: 30%;
+  background-image: url(assets/images/bg-sidebar-desktop.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.step{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  /* background-color: burlywood; */
+  /* margin: 1rem 0rem; */
+}
+#firstStep{
+  background-color: red;
+}
+.lines{
+  width: calc(100% - 2rem);
+  padding-left: 1rem;
+}
+.step button{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: solid 1px white;
+  background-color: transparent;
+  color: aliceblue;
+}
+.step h6,.step h4{
+  text-align: left;
+  margin: 0rem 0%;
+  padding: 0%;
+
+}
+.step h6,p{
+  color: rgb(171, 172, 173);
+  font-weight:200 ;
+}
+.right{
+  width: 65%;
+  /* background-color: aquamarine; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+
+}
+label,input{
+  display: block;
+  padding: .5rem;
+  width: 80%;
+}
+input{
+  
+  border: solid .5px rgba(98, 97, 97, 0.526);
+  border-radius: 5px;
+  background-color: transparent;
+}
+label{
+  margin: .2rem;
+}
+.right h1{
+  color: rgb(1, 1, 87);
+}
+.right .last{
+  width: 83%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.right .btns{
+  
+  
+  bottom: 1rem;
+  right: 8rem;
+  background-color: rgb(1, 1, 87); ;
+  color: aliceblue;
+  padding: .7rem 1.4rem;
+  border-radius: 5px;
+  border: none;
+}
+.items{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.advanced,.arcade,.pro{
+  border: solid 1px rgba(62, 62, 62, 0.421);
+  border-radius: 5px;
+  width: 30%;
+  padding: 10px 15px;
+  margin-right: 1rem;
+}
+.items{
+  margin-top: 2rem;
+}
+.info2 p{
+  padding: 0;
+  margin: 0;
+}
+.info2 h3{
+  margin-bottom: 0;
+}
+.date{
+  display: flex;
+  justify-content: center;
+  margin: 2rem .5rem;
+  background-color: rgba(205, 211, 211, 0.441);
+  width: 75%;
+}
+.plan-btns{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  
+}
+.previous{
+  border: none;
+  color: rgba(5, 5, 81, 0.316);
+  font-weight: 600;
+  background-color: transparent;
+}
+.previous:hover{
+  color: rgb(5, 5, 81);
+
+}
+.thanks{
+margin: auto;
+text-align: center;
+}
+.thank{
+display: flex;
+align-items: center;
+display: none;
+padding: 1rem ;
+}
+.nameValidation1{
+    display: none;
+    color :red;
+    margin: .3rem;
+}
+.nameValidation2{
+    display: none;
+    color: green;
+    margin: .3rem;
+}
+
+
+@media screen and (max-width:688px) {
+body{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.container{
+  display: block;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+.left{
+  width: 100%;
+  height: 30vh;
+  border-radius: 0% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(assets/images/bg-sidebar-mobile.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lines{
+  display: none;
+}
+.step{
+  margin:2rem 1rem !important;
+  width: auto;
+}
+.right{
+  width: 100% !important;
+  min-height: 70vh;
+ 
+}
+.info1,.info2,.info3,.info4,.thank{
+  position: relative;
+  height: 65vh;
+}
+.sec{
+  position: absolute;
+  top: -6rem;
+  padding-left: 2rem;
+  width: 90%;
+  
+}
+.plan-btns,.last{
+  
+  position: absolute !important;
+  bottom: 0px !important;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+}
